@@ -64,7 +64,7 @@ namespace CoreSuteConnect.Class
             lineTotal = rec.Fields.Item("lineTotal").Value;
             return lineTotal;
         }
-
+        //sdfsfsf
         public int getTableRecordCount(string table)
         {
             int Total = 0;
