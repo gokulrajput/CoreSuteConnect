@@ -1,0 +1,191 @@
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmGenSettings.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmLicence.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmDocMaster.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTrans.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmEXPDetails.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmExpMaster.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmInctMaster.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmLCTrans.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmPortMaster.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmMaster.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmTrans.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmEMPS.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmLGAP.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmVIPS.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWIn.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWout.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\MULTIBOM\frmMB.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCMM.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCPM.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCPMM.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQA.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQC.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSM.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSR.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\icon.png
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe.config
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.pdb
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.AssemblyReference.cache
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.SuggestedBindingRedirects.cache
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbobsCOM.dll
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbouiCOM.dll
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.ResolveComReference.cache
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.Properties.Resources.resources
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.GenerateResource.cache
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.CoreCompileInputs.cache
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.exe
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.pdb
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmPriceList.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmLMItemsList.xml
+E:\Smitendra\Adons\working\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmFGPrice.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmGenSettings.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmLicence.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmDocMaster.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTrans.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTransList.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmEXPDetails.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmExpMaster.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmInctMaster.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmLCTrans.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmPortMaster.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmMaster.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmTrans.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSCTrans.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmEMPS.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmLGAP.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmVIPS.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWIn.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWout.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\MULTIBOM\frmMB.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmFGPrice.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmLMItemsList.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmPriceList.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCMM.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCPM.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCPMM.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQA.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQC.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSM.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSR.xml
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\icon.png
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsSCTrans.cs
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe.config
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.pdb
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.AssemblyReference.cache
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.SuggestedBindingRedirects.cache
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbobsCOM.dll
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbouiCOM.dll
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.ResolveComReference.cache
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.Properties.Resources.resources
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.GenerateResource.cache
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.CoreCompileInputs.cache
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.exe
+E:\Smitendra\Adons\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.pdb
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\AUTOEMAIL\frmEmailAutomation.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmGenSettings.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmLicence.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmDocMaster.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTrans.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTransList.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmEXPDetails.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmExpList.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmExpMaster.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmInctMaster.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmLCTrans.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmPortList.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmPortMaster.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmList.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmMaster.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmTrans.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSCTrans.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmEMPS.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmLGAP.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmVIPS.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWIn.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWout.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWNPM.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\MULTIBOM\frmMB.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmFGPrice.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmLMItemsList.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmPriceList.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCMM.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCPM.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSample.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQA.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQC.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSM.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSR.xml
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\icon.png
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\AUTOEMAIL\clsEmailAutomation.cs
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\DEFAULTSAPFORMS\clsPurchaseRequest.cs
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsETTransList.cs
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsSchmList.cs
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsSCTrans.cs
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe.config
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.pdb
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.AssemblyReference.cache
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.SuggestedBindingRedirects.cache
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbobsCOM.dll
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbouiCOM.dll
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.ResolveComReference.cache
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.Properties.Resources.resources
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.GenerateResource.cache
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.CoreCompileInputs.cache
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.exe
+E:\Smitendra\SAP\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.pdb
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\AUTOEMAIL\frmEmailAutomation.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmGenSettings.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\Common\frmLicence.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmDocMaster.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTrans.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmETTransList.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmEXPDetails.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmExpList.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmExpMaster.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmInctMaster.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmLCTrans.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmPortList.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmPortMaster.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmList.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmMaster.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSchmTrans.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\EXIM\frmSCTrans.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmEMPS.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmLGAP.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\GATEPASS\frmVIPS.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWIn.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWout.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\JOBWORK\frmJWNPM.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\MULTIBOM\frmMB.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmFGPrice.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmLMItemsList.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\PRICELIST\frmPriceList.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCMM.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCPM.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSample.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQA.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCQC.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSM.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Forms\QC\frmQCSR.xml
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\icon.png
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\AUTOEMAIL\clsEmailAutomation.cs
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\DEFAULTSAPFORMS\clsPurchaseRequest.cs
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsETTransList.cs
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsSchmList.cs
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\Class\EXIM\clsSCTrans.cs
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe.config
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.exe
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\bin\x64\Debug\CoreSuteConnect.pdb
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.AssemblyReference.cache
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.SuggestedBindingRedirects.cache
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbobsCOM.dll
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\Interop.SAPbouiCOM.dll
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.ResolveComReference.cache
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.Properties.Resources.resources
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.GenerateResource.cache
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.csproj.CoreCompileInputs.cache
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.exe
+E:\SAP\Addons\C#\SMIT\Addon Sources\Core Sute Connect\CoreSuteConnect\obj\x64\Debug\CoreSuteConnect.pdb
