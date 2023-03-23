@@ -13,6 +13,7 @@ using System.Runtime.InteropServices;
 using CoreSuteConnect.Class.EXIM;
 using CoreSuteConnect.Class.QC;
 using System.Drawing.Drawing2D;
+using CoreSuteConnect.Class.PRICELIST;
 
 namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
 {
@@ -449,6 +450,55 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                             }
                         }
 
+                        break;
+
+                    case BoEventTypes.et_ITEM_PRESSED:
+                        oForm = SBOMain.SBO_Application.Forms.ActiveForm;
+                        if (pVal.BeforeAction == true)
+                        {
+
+                            if (pVal.ItemUID == "1" && (oForm.Mode == BoFormMode.fm_ADD_MODE))
+                            {
+                                string act = null;
+                                string OutAct = objCU.GetJobWorkOutAccount();
+                                decimal qty = 0;
+                                string itm = null; 
+                                
+                                SAPbouiCOM.Form oUDFForm = SBOMain.SBO_Application.Forms.Item(oForm.UDFFormUID);
+                                string JOID = oUDFForm.Items.Item("U_JWODe").Specific.value;
+                               // oUDFForm.Items.Item("U_JWODe").Specific.value = oHeader.JWODE;
+
+                                string Qry1 = null;
+
+                                SAPbouiCOM.Matrix matGR = (SAPbouiCOM.Matrix)oForm.Items.Item("13").Specific;
+                                for (int i = 1; i <= matGR.RowCount; i++)
+                                {
+                                    act = Convert.ToString(((SAPbouiCOM.EditText)matGR.Columns.Item("59").Cells.Item(i).Specific).Value);
+                                 
+                                    if (act == OutAct)
+                                    {
+                                        qty = Convert.ToDecimal(((SAPbouiCOM.EditText)matGR.Columns.Item("9").Cells.Item(i).Specific).Value);
+                                        itm = Convert.ToString(((SAPbouiCOM.EditText)matGR.Columns.Item("1").Cells.Item(i).Specific).Value);
+
+                                        Qry1 = "  Select U_BalQty from dbo.[@OTR2] Where DocEntry = '"+ JOID + "' and U_ItemCode = '"+ itm + "' ";
+                                        SAPbobsCOM.Recordset rec4 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                                        rec4.DoQuery(Qry1);
+                                        if (rec4.RecordCount > 0)
+                                        {
+                                              if (qty > Convert.ToDecimal(rec4.Fields.Item("U_BalQty").Value))
+                                                {
+                                                BubbleEvent = false;
+                                                SBOMain.SBO_Application.StatusBar.SetText("Inventory Transfer Qty should be less or equal to Balance Quantity for Item : '"+ itm + "'", BoMessageTime.bmt_Short, BoStatusBarMessageType.smt_Error);
+                                             }
+                                        }  
+                                    }
+                                }    
+                            }
+                        }
+                        if (pVal.BeforeAction == false)
+                        {
+                            
+                        }
                         break;
 
                 }
