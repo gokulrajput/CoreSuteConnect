@@ -20,6 +20,42 @@ namespace CoreSuteConnect.Class
 {
     public class CommonUtility
     {
+
+        public string GetJobWorkInAccount()
+        { 
+            string Inglact = null; 
+            string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK-In'";
+            SAPbobsCOM.Recordset rec;
+            rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
+            rec.DoQuery(getQuery);
+            if (rec.RecordCount > 0)
+            {
+                while (!rec.EoF)
+                {
+                    Inglact = Convert.ToString(rec.Fields.Item("AcctCode").Value);
+                    rec.MoveNext();
+                }
+            }
+            return Inglact; 
+        }
+        public string GetJobWorkOutAccount()
+        {
+            string Inglact = null;
+            string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK'";
+            SAPbobsCOM.Recordset rec;
+            rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
+            rec.DoQuery(getQuery);
+            if (rec.RecordCount > 0)
+            {
+                while (!rec.EoF)
+                {
+                    Inglact = Convert.ToString(rec.Fields.Item("AcctCode").Value);
+                    rec.MoveNext();
+                }
+            }
+            return Inglact;
+        }
+
         public bool IsNullOrEmpty(SAPbouiCOM.Form oForm, string field, string msg)
         {  
             if (String.IsNullOrEmpty(oForm.Items.Item(field).Specific.Value.ToString()))
@@ -198,7 +234,6 @@ namespace CoreSuteConnect.Class
         {
             try
             { 
-            
                 SAPbobsCOM.Recordset rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
                 string query = "SELECT T1.* FROM ODSC AS T0 LEFT JOIN DSC1 AS T1 ON T0.BankCode = T1.BankCode WHERE T1.[BankCode] = '" + bankcode+ "'";
                 string Address = null;

@@ -107,43 +107,15 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                     string JOWid = oUDFForm.Items.Item("U_JWODe").Specific.value;
 
                     string act = null;
-                    string glact = null;
-                    string Inglact = null;
+                    string glact = objCU.GetJobWorkOutAccount();
+                    string Inglact = objCU.GetJobWorkInAccount();
 
                     SAPbouiCOM.Matrix matCMTR = (SAPbouiCOM.Matrix)oForm.Items.Item("13").Specific;
                     for (int i = 1; i <= matCMTR.RowCount; i++)
                     {
                         act = ((SAPbouiCOM.EditText)matCMTR.Columns.Item("59").Cells.Item(1).Specific).Value;
-                    }
-
-                    /****  JOBWORK IN Account **/
-                    string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK-In'";
-                    SAPbobsCOM.Recordset rec;
-                    rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                    rec.DoQuery(getQuery);
-                    if (rec.RecordCount > 0)
-                    {
-                        while (!rec.EoF)
-                        {
-                            Inglact = Convert.ToString(rec.Fields.Item("AcctCode").Value);
-                            rec.MoveNext();
-                        }
-                    }
-
-                    /****  JOBWORK Out Account **/
-                    string getQuery1 = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK'";
-                    SAPbobsCOM.Recordset rec1;
-                    rec1 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                    rec1.DoQuery(getQuery1);
-                    if (rec1.RecordCount > 0)
-                    {
-                        while (!rec1.EoF)
-                        {
-                            glact = Convert.ToString(rec1.Fields.Item("AcctCode").Value);
-                            rec1.MoveNext();
-                        }
-                    }
-                    /****  JOBWORK Out Account **/ 
+                    } 
+                     
                     // For JOBWORK In Case
                     if (act == Inglact)
                     {
@@ -162,7 +134,7 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                             string lineId = Convert.ToString(r3.Fields.Item("LineId").Value + 1);
                             string Visorder = Convert.ToString(r3.Fields.Item("VisOrder").Value + 1);
 
-                            string q2 = "INSERT INTO [dbo].[@ITR3] ([DocEntry],[LineId], [VisOrder],[Object],[U_TransType], [U_BaseDocEnt], [U_BaseDocNo], , [U_DocDate]) ";
+                            string q2 = "INSERT INTO [dbo].[@ITR3] ([DocEntry],[LineId], [VisOrder],[Object],[U_TransType], [U_BaseDocEnt], [U_BaseDocNo], [U_DocDate]) ";
                             q2 = q2 + "VALUES ( '" + JOWid + "' , '" + lineId + "', '" + Visorder + "', 'JITR', 'Goods Issue' , '" + DocKey + "', '" + DocNum + "' , '" + DocDate + "')";
                             SAPbobsCOM.Recordset r2 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
                             r2.DoQuery(q2);
@@ -294,10 +266,7 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                                     }
                                 }
                                 rec2.MoveNext();
-                            }
-
-                            
-
+                            }  
                         }
                     }
                 }

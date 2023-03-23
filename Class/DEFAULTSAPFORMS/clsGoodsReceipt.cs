@@ -104,42 +104,14 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                     SAPbouiCOM.Form oUDFForm = SBOMain.SBO_Application.Forms.Item(oForm.UDFFormUID);
                     string JOWid = oUDFForm.Items.Item("U_JWODe").Specific.value;
                     string act = null;
-                    string glact = null;
-                    string Inglact = null;
+                    string glact = objCU.GetJobWorkOutAccount();
+                    string Inglact = objCU.GetJobWorkInAccount();
 
                     SAPbouiCOM.Matrix matCMTR = (SAPbouiCOM.Matrix)oForm.Items.Item("13").Specific;
                     for (int i = 1; i <= matCMTR.RowCount; i++)
                     {
                         act = ((SAPbouiCOM.EditText)matCMTR.Columns.Item("59").Cells.Item(1).Specific).Value; 
-                    }
-
-                    /****  JOBWORK IN Account **/
-                    string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK-In'";
-                    SAPbobsCOM.Recordset rec;
-                    rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                    rec.DoQuery(getQuery);
-                    if (rec.RecordCount > 0)
-                    {
-                        while (!rec.EoF)
-                        {
-                            Inglact = Convert.ToString(rec.Fields.Item("AcctCode").Value);
-                            rec.MoveNext();
-                        }
-                    } 
-                    /****  JOBWORK Out Account **/
-                    string getQuery1 = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK'";
-                    SAPbobsCOM.Recordset rec1;
-                    rec1 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                    rec1.DoQuery(getQuery1);
-                    if (rec1.RecordCount > 0)
-                    {
-                        while (!rec1.EoF)
-                        {
-                            glact = Convert.ToString(rec1.Fields.Item("AcctCode").Value);
-                            rec1.MoveNext();
-                        }
-                    }
-                    /****  JOBWORK Out Account **/
+                    }  
 
                     // For JOBWORK In
                     if (act == Inglact)
@@ -299,7 +271,8 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
             {
 
             }
-        }
+        } 
+
         // FOR JOBWORK ADDON
         public bool ItemEvent(ref SAPbouiCOM.ItemEvent pVal, ref bool BubbleEvent, string FormId)
         {
@@ -470,8 +443,8 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                                 if (pVal.ItemUID == "13" && pVal.ColUID == "9")
                                 {
                                     SAPbouiCOM.Form oUDFForm = SBOMain.SBO_Application.Forms.Item(oForm.UDFFormUID);
-                                    string JOTRDe = oUDFForm.Items.Item("U_JWODe").Specific.value;
-                                    
+                                    string JOTRDe = oUDFForm.Items.Item("U_JWODe").Specific.value; 
+
                                     string qry4 = "SELECT * from dbo.[@JOTR] where DocEntry = '" + JOTRDe + "'";
                                     SAPbobsCOM.Recordset rec4 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
                                     rec4.DoQuery(qry4);
@@ -520,23 +493,34 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
                                     double FinalTotal = POLineTotal + GISubTotal; 
                                     double Unitprice = FinalTotal / GRQty;
 
-                                    ((SAPbouiCOM.EditText)oMatrix.Columns.Item("10").Cells.Item(pVal.Row).Specific).Value = Convert.ToString(Unitprice);
 
-                                   /****** Get Itemcost from Goods Issue */
-                                    
+                                    string ActNo = oMatrix.Columns.Item("59").Cells.Item(pVal.Row).Specific.Value;
+                                    string Inglact = objCU.GetJobWorkInAccount(); 
 
-                                   /*string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK'";
-                                    SAPbobsCOM.Recordset rec;
-                                    rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                                    rec.DoQuery(getQuery);
-                                    if (rec.RecordCount > 0)
+                                    if(ActNo == Inglact)
                                     {
-                                        while (!rec.EoF)
-                                        {
-                                            ((SAPbouiCOM.EditText)oMatrix.Columns.Item("2").Cells.Item(pVal.Row).Specific).Value = Convert.ToString(rec.Fields.Item("AcctCode").Value);
-                                            rec.MoveNext();
-                                        }
-                                    }*/
+                                        //((SAPbouiCOM.EditText)oMatrix.Columns.Item("10").Cells.Item(pVal.Row).Specific).Value = Convert.ToString("INR 0.0000");
+                                    }
+                                    else
+                                    { 
+                                       ((SAPbouiCOM.EditText)oMatrix.Columns.Item("10").Cells.Item(pVal.Row).Specific).Value = Convert.ToString(Unitprice);
+                                    }
+
+                                    /****** Get Itemcost from Goods Issue */
+
+
+                                    /*string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK'";
+                                     SAPbobsCOM.Recordset rec;
+                                     rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
+                                     rec.DoQuery(getQuery);
+                                     if (rec.RecordCount > 0)
+                                     {
+                                         while (!rec.EoF)
+                                         {
+                                             ((SAPbouiCOM.EditText)oMatrix.Columns.Item("2").Cells.Item(pVal.Row).Specific).Value = Convert.ToString(rec.Fields.Item("AcctCode").Value);
+                                             rec.MoveNext();
+                                         }
+                                     }*/
                                 }
                                
                             }

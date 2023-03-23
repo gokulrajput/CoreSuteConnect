@@ -124,7 +124,7 @@ namespace CoreSuteConnect.Class.JOBWORK
                             }
                             else if (SBOMain.RightClickItemID == "matLDFG")
                             {
-                                ADDROWMain(matLDFG);
+                               // ADDROWMain(matLDFG);
                             }
                              
                         }
@@ -345,19 +345,8 @@ namespace CoreSuteConnect.Class.JOBWORK
                                 if (cbx.Selected != null)
                                 {
                                     //GETGL Acnt
-                                    string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK-In'";
-                                    SAPbobsCOM.Recordset rec;
-                                    string glact = null;
-                                    rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                                    rec.DoQuery(getQuery);
-                                    if (rec.RecordCount > 0)
-                                    {
-                                        while (!rec.EoF)
-                                        {
-                                            glact = Convert.ToString(rec.Fields.Item("AcctCode").Value);
-                                            rec.MoveNext();
-                                        }
-                                    }
+                                    string glact = objCU.GetJobWorkInAccount();
+
                                     string descrition = cbx.Selected.Description;
                                     string value = cbx.Selected.Value;
 
@@ -447,7 +436,7 @@ namespace CoreSuteConnect.Class.JOBWORK
                                             ((SAPbouiCOM.EditText)matGR.Columns.Item("9").Cells.Item(rowNum).Specific).Value = Convert.ToString(oHeader.lstChild[i].Quantity);
                                             ((SAPbouiCOM.EditText)matGR.Columns.Item("15").Cells.Item(rowNum).Specific).Value = oHeader.lstChild[i].WhsFrm;
                                             ((SAPbouiCOM.EditText)matGR.Columns.Item("59").Cells.Item(rowNum).Specific).Value = glact;
-                                            //((SAPbouiCOM.EditText)matGR.Columns.Item("10").Cells.Item(rowNum).Specific).Value = Convert.ToString(Unitprice);
+                                            ((SAPbouiCOM.EditText)matGR.Columns.Item("10").Cells.Item(rowNum).Specific).Value = "0.00";
                                             // ((SAPbouiCOM.EditText)matGR.Columns.Item("U_Price_CSJW").Cells.Item(rowNum).Specific).Value = Convert.ToString(Unitprice);
                                             //matGI.AddRow();
                                             //matGR.ClearRowData(matGR.RowCount); 
@@ -470,6 +459,21 @@ namespace CoreSuteConnect.Class.JOBWORK
                                                 SAPbobsCOM.ProductionOrders oProd = (SAPbobsCOM.ProductionOrders)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oProductionOrders);
 
                                                 oProd.ProductionOrderType = SAPbobsCOM.BoProductionOrderTypeEnum.bopotSpecial;
+
+                                                /**SET Series */
+                                                string q4 = "Select  Top 1 * from NNM1 Where SeriesName like '%JW%'  and ObjectCode = '202' Order BY Series DESC";
+                                                SAPbobsCOM.Recordset r4 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                                                r4.DoQuery(q4);
+                                                if (r4.RecordCount > 0) { 
+                                                    oProd.Series = r4.Fields.Item("Series").Value;
+                                                }
+                                                else
+                                                {
+                                                    BubbleEvent = false;
+                                                    SBOMain.SBO_Application.StatusBar.SetText("Please Add Jowork Series for Production Order", BoMessageTime.bmt_Short, BoStatusBarMessageType.smt_Error);
+                                                }
+                                                /**SET Series */
+
                                                 oProd.ItemNo = Convert.ToString(((SAPbouiCOM.EditText)matFGTR.Columns.Item("tItemCode").Cells.Item(i).Specific).Value);
                                                 oProd.PlannedQuantity = Convert.ToDouble(((SAPbouiCOM.EditText)matFGTR.Columns.Item("tQuantity").Cells.Item(i).Specific).Value);
                                                 oProd.PostingDate = DateTime.ParseExact(oForm.Items.Item("tDocDate").Specific.value, "yyyyMMdd", CultureInfo.InvariantCulture);
@@ -811,6 +815,10 @@ namespace CoreSuteConnect.Class.JOBWORK
                 oForm.Items.Item("tDocNum").Specific.value = oForm.BusinessObject.GetNextSerialNumber("DocEntry", "JITR");
                 Events.Series.SeriesCombo("JITR", "cSer");
                 oForm.Items.Item("cSer").DisplayDesc = true;
+
+                SAPbouiCOM.ComboBox cb = (SAPbouiCOM.ComboBox)oForm.Items.Item("tStatus").Specific;
+                cb.ExpandType = BoExpandType.et_DescriptionOnly;
+                cb.Select("O");
 
                 SAPbouiCOM.ComboBox cb6 = (SAPbouiCOM.ComboBox)oForm.Items.Item("tBPLId").Specific;
                 string getDocEntry = "SELECT BPLId, BPLName from OBPL  where BPLName != 'Main'";

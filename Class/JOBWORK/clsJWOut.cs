@@ -303,6 +303,7 @@ namespace CoreSuteConnect.Class.JOBWORK
                                         ((SAPbouiCOM.EditText)oMatrix.Columns.Item("tDscr").Cells.Item(pVal.Row).Specific).Value = oDataTable.GetValue("ItemName", 0).ToString();
                                         ((SAPbouiCOM.EditText)oMatrix.Columns.Item("tUOM").Cells.Item(pVal.Row).Specific).Value = oDataTable.GetValue("BuyUnitMsr", 0).ToString();
                                         ((SAPbouiCOM.EditText)oMatrix.Columns.Item("tFrmWhs").Cells.Item(pVal.Row).Specific).Value = oDataTable.GetValue("DfltWH", 0).ToString();
+                                        ((SAPbouiCOM.EditText)oMatrix.Columns.Item("tPrice").Cells.Item(pVal.Row).Specific).Value = oDataTable.GetValue("LastPurPrc", 0).ToString();
                                         ((SAPbouiCOM.EditText)oMatrix.Columns.Item("tToWhs").Cells.Item(pVal.Row).Specific).Value = oForm.Items.Item("tWhsCode").Specific.value.ToString();
                                           
                                     } 
@@ -353,19 +354,8 @@ namespace CoreSuteConnect.Class.JOBWORK
                                 if (cbx.Selected != null)
                                 {
                                     //GETGL Acnt
-                                    string getQuery = @"SELECT AcctCode FROM OACT WHERE ExportCode = 'JOBWORK'";
-                                    SAPbobsCOM.Recordset rec;
-                                    string glact = null;
-                                    rec = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset);
-                                    rec.DoQuery(getQuery);
-                                    if (rec.RecordCount > 0)
-                                    {
-                                        while (!rec.EoF)
-                                        {
-                                            glact = Convert.ToString(rec.Fields.Item("AcctCode").Value);
-                                            rec.MoveNext();
-                                        }
-                                    } 
+                                    string glact = objCU.GetJobWorkOutAccount();
+
                                     string descrition = cbx.Selected.Description;
                                     string value = cbx.Selected.Value;
 
