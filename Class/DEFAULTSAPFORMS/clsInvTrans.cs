@@ -214,6 +214,69 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
 
                         break;
 
+                    case BoEventTypes.et_ITEM_PRESSED:
+                        oForm = SBOMain.SBO_Application.Forms.ActiveForm;
+                        if (pVal.BeforeAction == true)
+                        {
+
+                            if (pVal.ItemUID == "1" && (oForm.Mode == BoFormMode.fm_ADD_MODE))
+                            { 
+                                decimal qty = 0;
+                                decimal bqty = 0;
+                                string itm = null; 
+
+                                SAPbouiCOM.Form oUDFForm = SBOMain.SBO_Application.Forms.Item(oForm.UDFFormUID);
+                                string JOID = oUDFForm.Items.Item("U_JWODe").Specific.value; 
+                                string Qry1 = null;
+                                 
+                                if (!string.IsNullOrEmpty(JOID))
+                                {
+                                    // CHECK ALREADY INVENTORY TRANSFER IS DONE OR NOT
+
+                                    Qry1 = "Select count(*) as total from dbo.[@OTR3] where U_TransType = 'Inventory Transfer' AND DocEntry = '" + JOID + "' ";
+                                    SAPbobsCOM.Recordset rec5 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                                    rec5.DoQuery(Qry1);
+                                    if (rec5.RecordCount > 0)
+                                    {
+                                        if (Convert.ToInt16(rec5.Fields.Item("total").Value) == 0)
+                                        {
+                                            BubbleEvent = false;
+                                            SBOMain.SBO_Application.StatusBar.SetText("Inventory Transfer Already Done for Jobwork Out Doc No. : '"+ JOID + "'.", BoMessageTime.bmt_Short, BoStatusBarMessageType.smt_Error);
+                                        }
+                                        else
+                                        {
+                                            // IF INVENTORY TRANSFER NOT DONE THEN CHECK Qty should not exceed
+                                            SAPbouiCOM.Matrix matGR = (SAPbouiCOM.Matrix)oForm.Items.Item("23").Specific;
+                                            for (int i = 1; i <= matGR.RowCount; i++)
+                                            {
+                                                qty = Convert.ToDecimal(((SAPbouiCOM.EditText)matGR.Columns.Item("10").Cells.Item(i).Specific).Value);
+                                                itm = Convert.ToString(((SAPbouiCOM.EditText)matGR.Columns.Item("1").Cells.Item(i).Specific).Value);
+
+                                                Qry1 = "Select U_Quantity from dbo.[@OTR2] Where DocEntry = '" + JOID + "' and U_ItemCode = '" + itm + "' ";
+                                                SAPbobsCOM.Recordset rec4 = (SAPbobsCOM.Recordset)SBOMain.oCompany.GetBusinessObject(BoObjectTypes.BoRecordset);
+                                                rec4.DoQuery(Qry1);
+                                                if (rec4.RecordCount > 0)
+                                                {
+                                                    bqty = Convert.ToDecimal(rec4.Fields.Item("U_Quantity").Value);
+
+                                                    if (qty > bqty)
+                                                    {
+                                                        BubbleEvent = false;
+                                                        SBOMain.SBO_Application.StatusBar.SetText("Inventory Transfer Qty should be less or equal to Quantity for Item : '" + itm + "'", BoMessageTime.bmt_Short, BoStatusBarMessageType.smt_Error);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    // CHECK ALREADY INVENTORY TRANSFER IS DONE OR NOT 
+                                }
+                            }
+                        }
+                        if (pVal.BeforeAction == false)
+                        {
+
+                        }
+                        break;
                 }
             }
             catch (Exception ex)
