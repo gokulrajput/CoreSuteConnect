@@ -35,6 +35,9 @@ namespace CoreSuteConnect.Class.DEFAULTSAPFORMS
         {
             try
             {
+                // CHAGNES for 3103
+
+
                 if (outClass != null)
                 {
                     oForm = SBOMain.SBO_Application.Forms.ActiveForm;
